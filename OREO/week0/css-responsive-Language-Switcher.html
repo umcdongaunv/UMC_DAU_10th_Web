@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Friends - Responsive Language Switcher</title>
+  <style>
+    /* 기본 리셋 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; }
+
+    .navbar {
+      width: 100%;
+      background-color: #fff;
+      border-bottom: 2px solid #f0f0f0;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 20px;
+    }
+
+    .navbar__logo {
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #333;
+      flex-shrink: 0; /* 로고 크기 유지 */
+    }
+
+    .navbar__menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .navbar__link {
+      text-decoration: none;
+      color: #777;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .navbar__link--active {
+      color: #e74c3c;
+    }
+
+    .navbar__button {
+      background-color: #e74c3c;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+    }
+
+    /* 반응형 수정: 메뉴가 사라지지 않게 설정 */
+    @media screen and (max-width: 480px) {
+      .navbar__container {
+        padding: 10px;
+        gap: 10px;
+      }
+      
+      .navbar__logo {
+        font-size: 16px;
+      }
+
+      .navbar__menu {
+        gap: 10px; /* 간격을 좁혀서 유지 */
+      }
+
+      .navbar__button {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#" id="logo" class="navbar__logo">고양이 친구들</a>
+
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a id="lang-ko" class="navbar__link navbar__link--active" onclick="changeLang('ko')">KO</a>
+        </li>
+        <li class="navbar__item">
+          <a id="lang-en" class="navbar__link" onclick="changeLang('en')">EN</a>
+        </li>
+      </ul>
+
+      <div class="navbar__actions">
+        <button id="cta-btn" class="navbar__button">시작하기</button>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    const translations = {
+      ko: { logo: "고양이 친구들", button: "시작하기" },
+      en: { logo: "Cat Friends", button: "Get Started" }
+    };
+
+    function changeLang(lang) {
+      document.getElementById('logo').textContent = translations[lang].logo;
+      document.getElementById('cta-btn').textContent = translations[lang].button;
+
+      document.getElementById('lang-ko').classList.remove('navbar__link--active');
+      document.getElementById('lang-en').classList.remove('navbar__link--active');
+      document.getElementById(`lang-${lang}`).classList.add('navbar__link--active');
+    }
+  </script>
+
+</body>
+</html>
