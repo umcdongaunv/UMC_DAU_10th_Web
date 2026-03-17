@@ -1,0 +1,143 @@
+/* 기본 초기화 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: 'Pretendard', -apple-system, sans-serif;
+}
+
+.todo {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.todo__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+/* 입력창 구역 */
+.todo__form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.todo__input {
+    width: 300px;
+    padding: 12px 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.todo__input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.todo__add-btn {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.todo__add-btn:hover {
+    background-color: #45a049;
+}
+
+/* 리스트 컨테이너 */
+.todo__container {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.todo__section {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    min-height: 300px;
+}
+
+.todo__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f3f5;
+    color: #495057;
+}
+
+.todo__list {
+    list-style: none;
+}
+
+/* 개별 아이템 스타일 */
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #f1f3f5;
+}
+
+.todo__item span {
+    font-size: 1rem;
+    color: #343a40;
+    word-break: break-all;
+    text-align: left;
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* 버튼 공통 */
+.todo__btn-complete, .todo__btn-delete {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.todo__btn-complete {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.todo__btn-complete:hover {
+    background-color: #c8e6c9;
+}
+
+.todo__btn-delete {
+    background-color: #ffebee;
+    color: #c62828;
+    font-weight: 600;
+}
+
+.todo__btn-delete:hover {
+    background-color: #ffcdd2;
+}
