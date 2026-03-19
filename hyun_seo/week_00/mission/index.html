@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <!--반응형 웹을 위한 viewport 설정-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMC Study Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo">
+    <!--메인 제목-->
+    <h1 class="todo_title">UMC Study Plan</h1>
+    <hr class="divider">
+    <!--입력창-->
+    <div class="todo_input_group">
+      <input type="text" id="todoInput" class="todo_input" placeholder="스터디 계획을 작성해보세요!">
+    </div>
+    <!--해야 할 일 / 해낸 일 영역-->
+    <div class="todo_container">
+      <!--해야 할 일-->
+      <section class="todo_section">
+        <h2 class="todo_subtitle">해야 할 일</h2>
+        <ul id="pendingList" class="todo_list"></ul>
+      </section>
+      <!--해낸 일-->
+      <section class="todo_section">
+        <h2 class="todo_subtitle">해낸 일</h2>
+        <ul id="completeList" class="todo_list"></ul>
+      </section>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
