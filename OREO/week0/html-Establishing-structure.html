@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>BEM Layout Mission</title>
+  <style>
+    /* 기본 리셋 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: sans-serif; color: white; font-weight: bold; }
+
+    /* Block: 전체 레이아웃 시스템 */
+    .mission {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 80px 250px 300px 80px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    /* Element: 공통 박스 스타일 (Flex 활용 정렬) */
+    .mission__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    /* Modifier: 구역별 배경색 및 그리드 위치 설정 */
+    .mission__item--header { background-color: #1a1f2c; }
+    
+    .mission__item--menu { 
+      background-color: #f6414f; 
+      grid-column: 2 / 4; 
+    }
+
+    .mission__item--hero { 
+      background-color: #5389cc; 
+      grid-column: 1 / 4; 
+    }
+
+    .mission__item--main { 
+      background-color: #273447; 
+    }
+
+    .mission__item--blank { 
+      background-color: #ffffff; 
+    }
+
+    /* Aside Group Block (중첩 그리드) */
+    .mission__aside {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .mission__item--image { background-color: #c4e8e9; color: black; }
+    .mission__item--extra { background-color: #52c299; }
+
+    .mission__item--banner { 
+      background-color: #ffda79; 
+      grid-column: 1 / 4; 
+      color: black; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mission">
+    <div class="mission__item mission__item--header">HEADER</div>
+    <div class="mission__item mission__item--menu">MENU</div>
+    
+    <div class="mission__item mission__item--hero">HERO</div>
+    
+    <div class="mission__item mission__item--main">MAIN</div>
+    <div class="mission__item mission__item--blank"></div>
+    <div class="mission__aside">
+      <div class="mission__item mission__item--image">IMAGE</div>
+      <div class="mission__item mission__item--extra">EXTRA</div>
+    </div>
+    
+    <div class="mission__item mission__item--banner">BANNER</div>
+  </div>
+
+</body>
+</html>
