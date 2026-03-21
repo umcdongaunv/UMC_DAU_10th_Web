@@ -1,0 +1,91 @@
+body {
+  background: #e5e7eb;
+  font-family: sans-serif;
+}
+
+/* 전체 박스 */
+.todo {
+  width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* 제목 */
+.todo__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 입력창 */
+.todo__input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo__input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* 추가 버튼 */
+.todo__add-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 좌우 레이아웃 */
+.todo__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.todo__column {
+  width: 45%;
+}
+
+/* 리스트 */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9fafb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 버튼 공통 */
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 완료 버튼 */
+.todo__complete-btn {
+  background: #22c55e;
+  color: white;
+}
+
+/* 삭제 버튼 */
+.todo__delete-btn {
+  background: #ef4444;
+  color: white;
+}
