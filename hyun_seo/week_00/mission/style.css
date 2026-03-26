@@ -1,0 +1,91 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #ebf1f9; /* 연한 블루톤 배경 */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.todo { width: 100%; max-width: 900px; text-align: center; }
+
+.todo_title { 
+  margin-bottom: 80px; 
+  font-size: 50px; 
+  font-weight: bold; 
+  color: #000;
+  letter-spacing: -1.5px;
+}
+
+.divider {
+  border: 0;
+  border-top: 2px solid #d1d8e0;
+  margin-bottom: 20px; 
+}
+
+.todo_input_group { 
+  margin-bottom: 30px; 
+  padding: 0 40px; 
+}
+
+.todo_input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #34495e;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+}
+
+.todo_container { 
+  display: flex; 
+  justify-content: space-between; 
+  gap: 100px; 
+}
+
+.todo_section { flex: 1; }
+
+.todo_subtitle { 
+  display: inline-block; /* 텍스트 길이에 맞춤 */
+  font-size: 20px; 
+  margin-bottom: 30px; 
+  border-bottom: 3px solid #d1d8e0; /* 강조된 밑줄 */
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.todo_list { list-style: none; }
+
+.todo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: transparent; /* 배경을 투명하게 하거나 흰색으로 설정 */
+  border-bottom: 3px solid #d1d8e0; /* 항목 사이 구분선 */
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.todo_click {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #d1d8e0;
+  color: #000;
+  font-weight: bold;
+}
+
+.todo_click_complete { 
+  background-color: #c9d6e4; 
+  color: #0892d0; 
+}
+
+.todo_click_delete { 
+  background-color: #ffcccc; 
+  color: #e74c3c; 
+}
