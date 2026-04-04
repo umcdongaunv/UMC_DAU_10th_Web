@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import HomePage from './02Mission2/pages/HomePage';
-import MoviePage from './02Mission2/pages/MoviePage';
-import NotFoundPage from './02Mission2/pages/NotFoundPage';
-import { MovieDetailPage } from './02Mission2/pages/MovieDetailPage';
+import HomePage from './03Mission2/pages/HomePage';
+import MoviePage from './03Mission2/pages/MoviePage';
+import NotFoundPage from './03Mission2/pages/NotFoundPage';
+import { MovieDetailPage } from './03Mission2/pages/MovieDetailPage';
 
 const router = createBrowserRouter([
   {
