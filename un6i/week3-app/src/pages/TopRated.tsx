@@ -1,1 +1,0 @@
-export default function TopRated() { return <h1>Top Rated Movies</h1>; }
