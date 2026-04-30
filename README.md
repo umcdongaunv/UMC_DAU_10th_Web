@@ -1,3 +1,29 @@
+# UMC_DAU_10th_Web
+
+
+[0] 기본 세팅
+-----------------------------------------------------------------------------------
+  * 본인 컴퓨터에 Git이 깔려있지 않은 경우, 사전 설치 후 진행
+ <br>   -> https://junesker.tistory.com/95  참고
+<br>
+<br>  * C드라이브 or 바탕화면에 프로젝트를 감싸는 폴더 구조를 생성
+    <br>&emsp;<pre>-> 개인폴더
+       <br>&emsp;&emsp; └ 닉네임
+         <br> &emsp;&emsp;&emsp;└ 주차 폴더
+            <br> &emsp;&emsp;&emsp;&emsp; └ 미션 파일</pre>
+
+      (ex) UMC_10th_Study
+            └ so_on
+                └ week1
+                  └ mission 1
+                  └ mission 2
+                  └ mission 3
+
+
+## [1] 프로젝트 폴더에서 Git 생성
+ <br>  [0]에서 생성한 상위 폴더에서 Git 생성
+ <br>   &emsp; 위의 예에서는 ' UMC_10th_Study'에서 진행
+   <br> 
 ## 🚀 UMC 10기 WEB 파트 주차별 과제 제출 가이드
 이 가이드는 **Git이 이미 설치되어 있다는 전제**하에 작성되었습니다.
 <br>
@@ -73,6 +99,7 @@ cd 상위폴더   #예: cd 경로/UMC_10th
 ```bash
 # 1. 이 폴더를 Git으로 관리하겠다고 선언!
 git init
+</pre>
 
 # 2. 공식 레포지토리 주소와 내 폴더를 연결!
 git remote add origin https://github.com/umcdongaunv/UMC_DAU_10th_Web.git
@@ -233,6 +260,4 @@ git push origin 본인닉네임
 
 
 
-<br>
-<br>
 <br>
