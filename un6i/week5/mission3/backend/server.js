@@ -10,4 +10,4 @@ app.use("/", authRouter);
 
 app.listen(8000, () => {
   console.log("server running on 8000");
-});
+}); // change
