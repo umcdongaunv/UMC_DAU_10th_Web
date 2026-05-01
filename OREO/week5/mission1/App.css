@@ -1,0 +1,117 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav a {
+  font-size: 14px;
+  color: #6b7280;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav a:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.nav a.active {
+  background: #111827;
+  color: #fff;
+}
+
+.content {
+  margin-top: 32px;
+}
+
+.page h1 {
+  font-size: 28px;
+  margin: 0 0 12px;
+  letter-spacing: -0.03em;
+}
+
+.page p {
+  color: #4b5563;
+  margin: 8px 0;
+}
+
+.cta {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: opacity 0.15s, transform 0.05s;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn.primary {
+  background: #111827;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  opacity: 0.92;
+}
+
+.btn.ghost {
+  background: #fff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+.btn.ghost:hover {
+  background: #f3f4f6;
+}
+
+.webtoon {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fef9c3 0%, #fde68a 100%);
+  border: 1px solid #facc15;
+}
+
+.webtoon h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.webtoon .quote {
+  font-style: italic;
+  color: #78350f;
+  font-weight: 600;
+}
