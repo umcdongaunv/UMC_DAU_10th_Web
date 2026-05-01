@@ -23,7 +23,7 @@ export default function App() {
     setIsLogin(false)
   }
 
-  // 🔥 API 테스트 (mock 401 발생시키기)
+  // API 테스트 (mock 401 발생시키기)
   const testApi = () => {
     throw new Error("mock 401 error trigger")
   }
