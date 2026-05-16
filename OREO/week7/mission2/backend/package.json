@@ -1,0 +1,19 @@
+{
+  "name": "umc-week7-mission2-backend",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "UMC 10th week7 mission2 stub backend — mission1과 동일 (옵티미스틱 데모용 지연은 routes에 그대로 유지)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
