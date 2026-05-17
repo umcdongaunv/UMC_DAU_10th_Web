@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMC Study Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo">
+    <h1 class="todo__title">UMC Study Plan</h1>
+    
+    <div class="todo__input-group">
+      <input type="text" id="todoInput" class="todo__input" placeholder="스터디 계획을 작성해보세요!">
+    </div>
+
+    <div class="todo__container">
+      <section class="todo__section">
+        <h2 class="todo__subtitle">해야 할 일</h2>
+        <ul id="todoList" class="todo__list"></ul>
+      </section>
+
+      <section class="todo__section">
+        <h2 class="todo__subtitle">해낸 일</h2>
+        <ul id="doneList" class="todo__list"></ul>
+      </section>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
